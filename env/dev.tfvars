@@ -1,3 +1,0 @@
-project_name  = "demo-dev"
-region        = "eu-central-1"
-instance_type = "t3.micro"

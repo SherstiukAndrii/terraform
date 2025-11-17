@@ -1,7 +1,7 @@
-module "example" {
-  source = "./modules/example_module"
+resource "null_resource" "tfc_test" {
+  count = 10
 
-  project_name  = var.project_name
-  instance_type = var.instance_type
-  region        = var.region
+  provisioner "local-exec" {
+    command = "echo Test ${count.index}"
+  }
 }
